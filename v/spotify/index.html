@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+Spotili v1.0
+Autor: @leonardobpessoa
+Projeto desenvolvido com muito carinho para elisa ❤️
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotili - Tudo em um só lugar</title>
+  <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/estilo.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top bg-opacity-50 navbar-custom">
+      <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <div class="logo">
+            <svg class="icone" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="50" fill="#8A2BE2"/>
+      
+              <!-- Ondas -->
+              <path d="M25 55 Q50 40 75 55" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <path d="M30 65 Q50 52 70 65" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M35 75 Q50 65 65 75" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </svg>
+
+             <span class="texto">Spotili</span>
+          </div>
+        </a>
+
+        <!-- Menu hambuguer -->
+        <button class="navbar-toggler border-white" data-bs-toggle="collapse" data-bs-target="#navegacao">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navegação -->
+        <div class="collapse navbar-collapse justify-content-end" id="navegacao">
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalProjeto">
+                Missão
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalPlanejamento">
+                Planejamento Estratégico
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalHistograma">
+                Histograma
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalQualidade">
+                Gestão da Qualidade
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalMaslow">
+                Teoria das Necessidades
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="btn btn-outline-light" href="https://wa.me/5554991362005" target="_blank">
+                Suporte
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header><!--/fim navegação -->
+
+  <section class="vh-100 d-flex align-items-center text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="carousel-home" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h1 class="text-white destaque">Tudo o que você gosta em um só lugar</h1><br>
+         <!--   <a href="#" class="btn btn-custom btn-roxo mb-2 mb-sm-0">Que tal uma flor para alegrar seu dia?</a>
+                <a href="#" class="btn btn-custom btn-branco">Escolha um presente</a>
+                <a href="#" class="btn btn-custom btn-branco">Escolha seu café</a>            
+                <a href="#" class="btn btn-custom btn-roxo mb-2 mb-sm-0">Clique aqui</a>           -->
+         <!--    <button class="btn btn-custom btn-roxo mb-2 mb-sm-0" data-bs-toggle="modal" data-bs-target="#modalProjeto">
+                      Sobre o Spotili ✨ TROQUEI O BOTÃO
+                </button>   -->
+                <button class="btn btn-custom btn-roxo btn-destaque mb-2 mb-sm-0" data-bs-toggle="modal" data-bs-target="#modalProjeto">
+                      Sobre o Spotili ✨
+                </button>
+
+              </div><!--/fim item 0 -->
+              <div class="carousel-item">
+                <h1 class="text-white destaque">As melhores playlists</h1>
+                <a href="https://open.spotify.com/user/3125i45zxaiwnfml4y5xbfcqepna?si=W9O_-OgpSLiKhwGIOCGrFA" target="_blank" class="btn btn-custom btn-branco">
+                  <i class="bi bi-music-note-beamed"></i>
+                  Ouça agora
+                </a>
+              </div><!--/fim item 1 -->
+            </div><!--/Fim conteúdo carousel-->
+            <!-- Controladores (setas) -->
+            <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#carousel-home">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#carousel-home">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+
+          </div><!--/fim Carousel -->
+        </div>
+      </div>
+    </div>
+  </section><!--/Fim Capa -->
+
+  <section id="servicos" class="bg-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- IMAGENS -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+
+          <h3 class="mb-3 titulo-fofo">As melhores playlists 🎧</h3>
+          <p class="subtitulo-fofo mb-4">
+            clique, ouça e aproveite
+          </p>
+
+          <div class="row g-3">
+            <div class="col-6">
+              <a href="https://open.spotify.com/playlist/4egOi5yy9FFSgGUk6DR2gj?si=X48Pwi0lTqKNdNq5-Zt-KA&pi=9D0O69acRXONr" target="_blank" class="img-link">
+                <img src="imagens/mg1.jpg" class="img-fluid rounded" alt="">
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="https://open.spotify.com/playlist/2bNKBWCwRylEsOWJDV8CLO?si=pWZO44bhTQmJrqrGSh8Jdg&pi=LeJ3zkQXS9uHz" target="_blank" class="img-link">
+                <img src="imagens/mg2.2.png" class="img-fluid rounded" alt="">
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="https://open.spotify.com/playlist/4fVIgqlemhOaM2vfZESx0n?si=2qs4oS7ERg6iW5wGPrH_YA&pi=Uucru0HYQL-4l" target="_blank" class="img-link">
+                <img src="imagens/mg3.jpg" class="img-fluid rounded" alt="">
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="https://open.spotify.com/playlist/4KUn73jpDZpUDWeLNovfVo?si=5krGLuDkRYS_ZgnMVs70Lg&pi=EkBJNsGZR6CEK" target="_blank" class="img-link">
+                <img src="imagens/mg4.jpg" class="img-fluid rounded" alt="">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- TEXTO + ACCORDION -->
+        <div class="col-lg-6">
+
+          <h2 class="display-2 mb-2 titulo-fofo">
+            Um pouquinho do seu mundo ✨
+          </h2>
+          <p class="subtitulo-fofo mb-4">
+            coisas simples que me lembram você
+          </p>
+
+          <div class="accordion" id="accordionSpotili">
+
+            <!-- ITEM 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#item1">
+                  🎧 Playlists com as Melhores Músicas
+                </button>
+              </h2>
+              <div id="item1" class="accordion-collapse collapse show">
+                <div class="accordion-body text-center">
+                  <p>No Spotili você encontra uma playlist para cada momento.</p>
+                  <a href="https://open.spotify.com/user/3125i45zxaiwnfml4y5xbfcqepna?si=W9O_-OgpSLiKhwGIOCGrFA" target="blank" class="btn btn-spotili mt-2">Ouvir agora</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item2">
+                  🌸 Flores que Melhoram os Dias
+                </button>
+              </h2>
+              <div id="item2" class="accordion-collapse collapse">
+                <div class="accordion-body text-center">
+                  <p>Receber uma flor pode mudar completamente o seu dia.</p>
+                  <small class="text-muted">principalmente se for de alguém que conhece suas flores favoritas...</small><br>
+                  <a href="https://www.instagram.com/floricultura_folhaseflores?igsh=MWJobmZvaGZuZnB3" target="_blank" class="btn btn-spotili mt-2">Ver flores</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item3">
+                  ☕ Vamos de Café?
+                </button>
+              </h2>
+
+              <div id="item3" class="accordion-collapse collapse">
+                <div class="accordion-body text-center">
+
+                  <p>
+                    Que tal um cafezin para aquecer a alma?
+                  </p>
+
+                  <button class="btn btn-spotili mt-2" data-bs-toggle="modal" data-bs-target="#modalCafe">
+                    Aceito um café ☕
+                  </button>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item4">
+                  🎁 Escolha um Presente
+                </button>
+              </h2>
+              <div id="item4" class="accordion-collapse collapse">
+                <div class="accordion-body text-center">
+                  <p>Porque às vezes, a melhor surpresa é aquela que você escolhe para você mesma.</p>
+                  <a href="https://www.instagram.com/bemmequerarcos?igsh=MTVvbjhsMHMzcWZoMQ==" target="_blank" class="btn btn-spotili mt-2">Ver presentes</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item5">
+                  ⚽ Time do Coração
+                </button>
+              </h2>
+              <div id="item5" class="accordion-collapse collapse">
+                <div class="accordion-body text-center">
+                  <p>Encontre o hino do seu time favorito. O Cruzeiro, claro 💙</p>
+                  <a href="https://open.spotify.com/track/4PJoKjpFH0qLPWySur3xHN?si=TLMLNl68S6S43q5nryvycg" target="blank" class="btn btn-spotili mt-2">Ouvir hino</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item6">
+                  🎵 Outras Playlists para Você
+                </button>
+              </h2>
+              <div id="item6" class="accordion-collapse collapse">
+                <div class="accordion-body text-center">
+                  <p>Sugestões</p>
+                  <a href="https://open.spotify.com/playlist/37i9dQZF1EJJ6PF7uWbAzs?si=NnI7c755QMOlvz_h-TinOw&pi=t-S-k6sYTI2oQ" target="blank" class="btn btn-spotili mt-2">Nosso Match</a>
+                  <a href="https://open.spotify.com/playlist/1P288Q5UPW2xissREc5MlF?si=6gzBsb5TTHOg9s8PvzZlGw&pi=vCsoqgIoQRCkD" target="blank" class="btn btn-spotili mt-2">Meus Nenê X</a>
+                  <a href="https://open.spotify.com/playlist/4bJtel9AbGEHsk0rVZJ6cK?si=VVqFt0qQQ_iAVviDRQpe4g&pi=Xm-kcT7hSVWRK" target="blank" class="btn btn-spotili mt-2">Old Italy</a>
+                  <a href="https://open.spotify.com/playlist/5u5QSedK4tIhvijeKbGlDZ?si=ki57vEEbSPm573bM-LjmMQ&pi=UpokWFNYSoqDp" target="blank" class="btn btn-spotili mt-2">Antiguinhas</a>
+                  <a href="https://open.spotify.com/playlist/36J3CcYej4Iz7O49JL338H?si=6RADgbQyTfS8VUMxUCeeyg&pi=mL_kK3K2R9Spi" target="blank" class="btn btn-spotili mt-2">Hermanos</a>
+                  <a href="https://open.spotify.com/playlist/2lWRxSfXpZVyWdUOojdqaf?si=S8gWxD86SHinnQd9CBAt_g&pi=atQdcuYNQ5Ozo" target="blank" class="btn btn-spotili mt-2">Rock/Metal</a>
+                  <a href="https://open.spotify.com/playlist/7g0cR95A8xq3Y33Afgtbhu?si=5MK8o-jPQLS3a0ceGzroLA&pi=fDQjn_6wQr6pv" target="blank" class="btn btn-spotili mt-2">IDK</a>
+                  <a href="https://open.spotify.com/playlist/6XsWcKTQKo1nsNdSs0A0df?si=zwn2OsOfTT-9vgWABLXHRA&pi=Kh-qToR0TguH6" target="blank" class="btn btn-spotili mt-2">PaGod</a>
+                  <a href="https://open.spotify.com/playlist/6J78emgBhAqMfOP1MHprjZ?si=3Aho_237TDa7gWbFSOS41g&pi=dITZpg_0SEKne" target="blank" class="btn btn-spotili mt-2">Solares</a>
+                  <a href="https://open.spotify.com/playlist/6w4MESIPhRyCDk6pAuSL20?si=BvN7KL-kTy-LedjvxBSB_A&pi=rWgGBAx2ToCSe" target="blank" class="btn btn-spotili mt-2">Nevermind</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="recursos" class="py-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4">
+          <h2 class="display-3">SIMPLES</h2>
+          <h5 class="display-5">Música</h5>
+          <p>Já sabe o que quer escutar? É só procurar e apertar o play.</p>
+          <h5 class="display-5">Presentes</h5>
+          <p>Flores, mimos, lanches e cafés em um só lugar.</p>
+          <h5 class="display-5">Projeto</h5>
+          <p>Desfrute! Cada parte do site foi feita com muito carinho especialmente para você.</p>
+        </div><!--/Fim textos-->
+
+        <div class="col-lg-8">
+          <div class="row rotacionar">
+            <div class="col-lg-6">
+              <img src="imagens/iphone1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6">
+              <img src="imagens/iphone2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div><!--/Fim imagens-->
+      </div>
+    </div>
+  </section><!--/Fim Recursos -->
+
+  <footer class="bg-black py-5 position-relative">
+    <div class="container">
+      <div class="row align-items-start gy-4">
+
+        <!-- LOGO -->
+        <div class="col-md-3 mb-4">
+          <div class="logo mb-3">
+            <svg class="icone" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="50" fill="#8A2BE2"/>
+              <path d="M25 55 Q50 40 75 55" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <path d="M30 65 Q50 52 70 65" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M35 75 Q50 65 65 75" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </svg>
+            <span class="texto">Spotili</span>
+          </div>
+
+          <!--   <p class="text-muted small mb-2">
+            Um projeto simples, mas com intenção real.
+          </p>  --> 
+
+          <!-- BOTÃO SECRETO -->
+          <a href="https://open.spotify.com/track/6fuJ46PG4wJyOQdDPcLSk8?si=6UvBh-76T1eKbmqlFYzNyA" class="simbolo-secreto" target="_blank">
+            <svg viewBox="0 0 100 100" class="icone-supernatural">
+
+              <!-- Círculo -->
+              <circle cx="50" cy="50" r="30" stroke="white" stroke-width="2" fill="none"/>
+
+              <!-- Pentagrama -->
+              <polygon points="50,22 61,45 85,45 66,60 72,82 50,68 28,82 34,60 15,45 39,45"
+                      fill="none" stroke="white" stroke-width="2"/>
+
+              <!-- Chamas simplificadas -->
+              <path d="M50 5 
+                      C40 15, 35 25, 40 35
+                      C30 30, 25 45, 35 55
+                      C25 55, 30 70, 45 75
+                      C40 85, 60 85, 55 75
+                      C70 70, 75 55, 65 55
+                      C75 45, 70 30, 60 35
+                      C65 25, 60 15, 50 5Z"
+                    fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.7"/>
+
+            </svg>
+          </a>
+
+        </div>
+
+        <!-- KPI -->
+        <div class="col-md-4 mb-4 px-md-4 border-start border-secondary">
+          <h5 class="text-white mb-2">Indicadores (KPI) 📊</h5>
+
+          <p class="text-muted small mb-4">
+            Métricas utilizadas para acompanhar evolução e consistência ao longo do tempo.
+          </p>
+
+          <div class="d-flex justify-content-between text-center">
+
+            <div>
+              <h2 class="text-white fw-bold">87%</h2>
+              <small class="text-light">Frequência de pensamentos</small>
+            </div>
+
+            <div>
+              <h2 class="text-white fw-bold">↑</h2>
+              <small class="text-light">Nível de evolução pessoal</small>
+            </div>
+
+            <div>
+              <h2 class="text-white fw-bold">100%</h2>
+              <small class="text-light">Índice de comprometimento</small>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- DIAGNÓSTICO -->
+        <div class="col-md-5 mb-4 ps-md-4 diagnostico-texto">  
+          <h5 class="text-white mb-4">Diagnóstico 📌</h5>
+
+          <p class="text-light">
+            Com base nos indicadores apresentados e na análise dos acontecimentos recentes:
+          </p>
+
+          <p class="text-light">
+            foram identificadas falhas no processo, além de inconsistências entre intenção e prática.
+          </p>
+
+          <p class="text-white mt-3">
+            <strong>Plano de ação:</strong><br>
+            agir melhor, com mais atenção e mais cuidado.
+          </p>
+
+          <a href="https://wa.me/5554991362005" target="_blank" class="btn btn-spotili mt-3">
+            Abrir canal de comunicação 💬
+          </a>
+        </div>
+
+      </div>
+
+      <!-- LINHA FINAL -->
+      <div class="row mt-4">
+        <div class="col text-center">
+          <p class="text-light mb-0 small" style="opacity: 0.6;">
+          Gestão de Processos ativo, com foco na melhoria contínua.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- INÍCIO MODAIS -->
+
+
+  <!-- INÍCIO MODAL PRINCIPAL -->
+  <div class="modal fade" id="modalProjeto" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-fofo">
+
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Sobre o Spotili 💼</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body text-center">
+
+          <p><strong>Missão:</strong><br>
+          Fazer você sorrir todos os dias</p>
+
+          <p><strong>Visão:</strong><br>
+          Estar presente nos seus melhores e piores momentos (com música, café, poemas e pequenas surpresas)</p>
+
+          <p><strong>Valores:</strong></p>
+          <ul class="lista-valores">
+            <li>Atenção aos detalhes</li>
+            <li>Momentos simples</li>
+            <li>Boas conversas</li>
+            <li>Risadas aleatórias</li>
+            <li>Companheirismo</li>
+            <li>Confiança</li>
+            <li>E claro... Música boa 🎧</li>
+          </ul>
+
+          <hr>
+
+          <p class="mt-3"><strong>Motivo do projeto:</strong></p>
+          <p class="texto-final">
+            A verdade é que… a vida fica mais interessante quando você faz parte dela 💜
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- FINAL MODAL PRINCIPAL -->
+
+
+  <!-- MODAL DO CAFÉ -->
+  <div class="modal fade" id="modalCafe" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-fofo text-center">
+
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Convite especial ☕</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <p>
+            Ainda não sei qual é o seu café favorito da cidade, hehe... ☕<br>
+            mas acho que seria bem melhor descobrir com você.
+          </p>
+
+          <p class="text-muted">
+            Quando quiser, me chama no whats pra eu te pagar um café. Sei que curte um cappuccino.
+          </p>
+
+          <!-- BOTÃO WHATSAPP -->
+          <a href="https://wa.me/5554991362005" target="_blank" class="btn btn-spotili mt-3">
+            Chamar 💬
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- FIM MODAL DO CAFÉ -->
+
+
+  <!-- MODAL PLANEJAMENTO ESTRATÉGICO -->
+  <div class="modal fade" id="modalPlanejamento" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-fofo">
+        
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Planejamento Estratégico 📊</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <p class="text-muted">Baseado em Chiavenato</p>
+
+          <ul>
+            <li><strong>1. Formulação dos objetivos:</strong><br>
+            Fazer você sorrir de novo, nem que seja um pouco.</li><br>
+
+            <li><strong>2. Análise externa:</strong><br>
+            Entender que muita coisa aconteceu, e que não é possível alterar o passado.</li><br>
+
+            <li><strong>3. Análise interna:</strong><br>
+            Reconhecer que eu errei e tenho muito a melhorar.</li><br>
+
+            <li><strong>4. Estratégia:</strong><br>
+            Fazer algo simples, mas verdadeiro.</li><br>
+
+            <li><strong>5. Plano:</strong><br>
+            Te mostrar isso aqui.</li>
+          </ul>
+
+          <p class="text-muted mt-3">
+            (Este projeto estará sempre em melhoria contínua — assim como eu)
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL HISTOGRAMA -->
+  <div class="modal fade" id="modalHistograma" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-fofo text-center">
+
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Histograma 📊</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <p>
+            Um histograma é uma ferramenta estatística que ajuda a entender o que mais se repete dentro de um conjunto de dados.
+          </p>
+
+          <canvas id="meuHistograma" height="200"></canvas>
+
+          <p class="mt-3">
+            E olhando isso… dá pra perceber o que mais se repete nas coisas que me fazem lembrar de você.
+          </p>
+
+          <p class="text-muted mt-3">
+            (Este projeto estará sempre em melhoria contínua — assim como eu)
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL GESTÃO DA QUALIDADE -->
+  <div class="modal fade" id="modalQualidade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-fofo text-center">
+
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Ciclo PDCA 🔄</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <p>
+            O Ciclo PDCA (também conhecido como Ciclo de Deming ou de Shewhart) é uma ferramenta usada para melhorar processos de forma contínua, sendo amplamente utilizado nas Gestões de Projetos, Processos e de Qualidade.<br><br>
+            Resumindo, ele serve pra ajustar o que não saiu como esperado e tentar fazer melhor da próxima vez.
+          </p>
+
+          <ul class="lista-valores">
+            <li><strong>Plan (Planejar):</strong><br>
+            Pensar em algo que faz parte do "seu mundo" — do seu meio.</li><br>
+
+            <li><strong>Do (Executar):</strong><br>
+            Desenvolver o presente projeto com coisas que sei que são importantes pra você — e que me lembram você.</li><br>
+
+            <li><strong>Check (Verificar):</strong><br>
+            Perceber que talvez ainda falte muita coisa — e tudo bem.</li><br>
+
+            <li><strong>Act (Agir):</strong><br>
+            Tentar melhorar — inclusive e principalmente — como pessoa.</li>
+          </ul>
+
+          <p class="text-muted mt-3">
+            (Este projeto estará sempre em melhoria contínua — assim como eu)
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL MASLOW -->
+  <div class="modal fade" id="modalMaslow" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-fofo text-center">
+
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Hierarquia de Necessidades 🧠</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <p>
+            A teoria de Maslow organiza as necessidades humanas em níveis, indo das mais básicas (fisiológicas) até as mais profundas (autorrealização).
+          </p>
+
+          <div class="piramide">
+
+            <div class="nivel n1">
+              <strong>Fisiológicas</strong>
+              <span>café, alimentação, descanso, música, pequenas coisas do dia ☕</span>
+            </div>
+
+            <div class="nivel n2">
+              <strong>Segurança</strong>
+              <span>paz, estabilidade e tranquilidade</span>
+            </div>
+
+            <div class="nivel n3">
+              <strong>Sociais</strong>
+              <span>conversas, risadas e companhia</span>
+            </div>
+
+            <div class="nivel n4">
+              <strong>Estima</strong>
+              <span>se sentir valorizada e importante</span>
+            </div>
+
+            <div class="nivel n5">
+              <strong>Autorrealização</strong>
+              <span>esse é com você</span>
+            </div>
+
+          </div>
+
+          <p class="mt-3">
+            E no meio disso tudo… algumas pessoas acabam se encaixando em mais de uma dessas camadas.
+          </p>
+
+          <p class="text-muted mt-3">
+            (Este projeto estará sempre em melhoria contínua — assim como eu)
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FINAL MODAIS -->
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+  let chartCriado = false;
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById('modalHistograma');
+
+    if (modal) {
+      modal.addEventListener('shown.bs.modal', function () {
+
+        if (chartCriado) return;
+
+        const canvas = document.getElementById('meuHistograma');
+
+        if (canvas) {
+          const ctx = canvas.getContext('2d');
+
+          const gradient = ctx.createLinearGradient(0, 0, 0, 200);
+          gradient.addColorStop(0, '#a855f7'); // roxo claro
+          gradient.addColorStop(1, '#7c25f8'); // roxo principal
+
+          new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ['Música 🎧', 'Café ☕', 'Conversas 💬', 'Risadas 😂', 'Saudade 💭'],
+              datasets: [{
+                data: [7, 4, 9, 8, 10],
+                backgroundColor: gradient,
+                borderRadius: 12,
+                borderSkipped: false,
+                hoverBackgroundColor: '#9333ea'
+              }]
+            },
+            options: {
+              responsive: true,
+              animation: {
+                duration: 1200,
+                easing: 'easeOutQuart'
+              },
+              plugins: {
+                legend: {
+                  display: false
+                },
+                tooltip: {
+                  backgroundColor: '#1a1a1a',
+                  titleColor: '#fff',
+                  bodyColor: '#ddd',
+                  borderColor: '#7c25f8',
+                  borderWidth: 1,
+                  padding: 10,
+                  cornerRadius: 10
+                }
+              },
+              scales: {
+                x: {
+                  ticks: {
+                    color: '#555'
+                  },
+                  grid: {
+                    display: false
+                  }
+                },
+                y: {
+                  beginAtZero: true,
+                  ticks: {
+                    color: '#999'
+                  },
+                  grid: {
+                    color: 'rgba(0,0,0,0.05)'
+                  }
+                }
+              }
+            }
+          });
+
+          chartCriado = true;
+        }
+
+      });
+    }
+  });
+  </script> 
+
+</body>
+</html>
