@@ -1,0 +1,460 @@
+/*
+* 
+* @autor Leonardo
+*/
+body {
+    background: url(../imagens/capa.png),
+        url(../imagens/ruido.png),
+        linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+/*pra baixo eu */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icone {
+  width: 45px; /* um pouco mais equilibrado */
+  height: auto;
+}
+
+.texto {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+
+
+.navbar-custom .nav-link {
+    color: white;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #8bf0e1;
+}
+
+.rotacionar {
+    /*transform: rotate(30deg); TIREII
+    padding-left: 80px;
+    */
+    transform: rotate(15deg); /* diminui a rotação */
+    padding-left: 0; /* remove esse empurrão lateral */
+}
+
+/* Tipografia */
+.btn-custom {
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.btn-roxo {
+    background-color: #7c25f8;
+}
+
+.btn-roxo:hover {
+    background-color: #6707e3;
+    color: white;
+}
+
+.btn-branco {
+    border: 2px solid white;
+}
+
+.btn-branco:hover {
+    background-color: white;
+    color: black;
+}
+
+h1.destaque {
+    font-size: clamp(2rem, 10vw, 6rem);
+}
+
+#servicos h2,
+h3 {
+    color: #6f42c1;
+}
+
+#recursos {
+    color: white;
+}
+
+#recursos h5 {
+    color: #9bf0e1;
+}
+
+/* NOVO LEO AQUI  */
+
+
+/* Botão mais clean e elegante */
+.btn-spotili {
+  background: linear-gradient(45deg, #7c25f8, #a855f7);
+  color: white;
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover suave */
+.btn-spotili:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(124, 37, 248, 0.3);
+  color: white;
+}
+
+/* Clique */
+.btn-spotili:active {
+  transform: scale(0.97);
+}
+
+
+
+/* Texto mais suave */
+.accordion-body p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* NOVO, NOVO LEO AQUI. HOVER DAS IMG  */
+
+.img-link img {
+  transition: box-shadow 0.3s ease, filter 0.3s ease, transform 0.3s ease;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.img-link:hover img {
+  filter: brightness(1.2);
+  box-shadow: 0 12px 30px rgba(111, 66, 193, 0.6);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+
+/* Título mais bonito */
+.titulo-fofo {
+  color: #6f42c1;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.subtitulo-fofo {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+/* Accordion estilo cartão */
+.accordion-item {
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+  transform: translateY(-4px);
+}
+
+/* Botão */
+.accordion-button {
+  background: transparent;
+  color: #6f42c1;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background: transparent;
+  color: #6f42c1;
+}
+
+/* Fundo quando abre */
+.accordion-collapse.show {
+  background: linear-gradient(45deg, #f8f5ff, #ffffff);
+}
+
+/* Animação suave */
+.accordion-body {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Modal estilizado */
+.modal-fofo {
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(135deg, #ffffff, #f8f5ff);
+  box-shadow: 0 15px 40px rgba(124, 37, 248, 0.2);
+}
+
+/* Título */
+.modal-title {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+/* Lista */
+.lista-valores {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-valores li {
+  margin-bottom: 5px;
+}
+
+/* Texto final destaque */
+.texto-final {
+  font-size: 1.1rem;
+  color: #6f42c1;
+  font-weight: 500;
+}
+
+/* Animação leve */
+.modal-content {
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* MAIS LEO. AGORA BOTAO SOBRE O SPOTILI */
+
+.btn-destaque {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1.05rem;
+}
+
+
+
+/* FOOTER PART */
+
+footer .text-muted {
+  color: rgba(255,255,255,0.5) !important;
+}
+
+footer .text-light {
+  color: rgba(255,255,255,0.8) !important;
+}
+
+footer h5 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+
+/* Supernatural */
+
+.simbolo-secreto {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.icone-supernatural {
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.simbolo-secreto:hover .icone-supernatural {
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* Glow roxo */
+.simbolo-secreto:hover circle,
+.simbolo-secreto:hover polygon {
+  filter: drop-shadow(0 0 6px #a855f7);
+}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .simbolo-secreto {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+
+
+.diagnostico-texto p {
+  text-align: left;
+  line-height: 1.6;
+  max-width: 420px;
+  margin-bottom: 12px;
+}
+
+
+
+
+/* PIRÂMIDE MASLOW 1
+.piramide {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.nivel {
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 320px;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+ cada nível 
+.n1 { background: #7c25f8; max-width: 320px; }
+.n2 { background: #8e3cf9; max-width: 260px; }
+.n3 { background: #a855f7; max-width: 200px; }
+.n4 { background: #c084fc; max-width: 140px; }
+.n5 { background: #e0c3fc; color: #4c1d95; max-width: 80px; font-weight: 600; }             */
+
+
+
+/* PIRÂMIDE MASLOW */
+.piramide {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.nivel {
+  color: white;
+  text-align: center;
+  padding: 14px 12px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  width: 100%;
+  clip-path: polygon(12% 0%, 88% 0%, 100% 100%, 0% 100%);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+/* Hover suave */
+.nivel:hover {
+  transform: scale(1.03);
+}
+
+/* Títulos (FISIOLÓGICAS, etc) */
+.nivel strong {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  line-height: 1.1;
+}
+
+/* Texto dos níveis */
+.nivel span {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  line-height: 1.2;
+}
+
+/* ajuste específico do topo */
+.n5 strong {
+  font-size: 0.65rem;
+  letter-spacing: 0.5px;
+}
+
+/* níveis (proporção equilibrada) */
+.n1 { background: #7c25f8; max-width: 495px; }
+.n2 { background: #8e3cf9; max-width: 380px; }
+.n3 { background: #a855f7; max-width: 290px; }
+.n4 { background: #c084fc; max-width: 220px; }
+.n5 { 
+  background: #e0c3fc; 
+  max-width: 170px; 
+  color: white;
+  font-weight: 600;
+}
+
+.nivel {
+  opacity: 0.95;
+}
+
+.piramide {
+  margin-top: 30px;
+}
+
+
+
+
+/* CORREÇÃO SCROLL LATERAL MOBILE */
+html, body {
+  overflow-x: hidden;
+}
+
+#recursos {
+  overflow: hidden;
+}
+
+/* RESPONSIVO PIRÂMIDE */
+@media (max-width: 576px) {
+
+  .nivel {
+    clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%);
+  }
+
+  .n5 {
+    max-width: 60% !important;
+  }
+
+}
